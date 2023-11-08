@@ -16,7 +16,7 @@ jobs:
         name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.bduong02 }}
+          username: ${{ secrets.bduong1 }}
           password: ${{ secrets.python-docker }}
       -
         name: Set up Docker Buildx
@@ -27,4 +27,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.bduong02 }}/${{ github.event.repository.name }}:latest
+          tags: ${{ secrets.bduong1 }}/${{ github.event.python-docker-dev }}:latest
